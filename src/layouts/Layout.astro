@@ -20,6 +20,17 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <a href="/" class="nav-logo">TG</a>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/#projects">Projects</a>
+          <a href="/blog">Blog</a>
+          <a href="/#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
     <slot />
   </body>
 </html>
@@ -47,6 +58,7 @@ const { title } = Astro.props;
   body {
     min-height: 100vh;
     line-height: 1.6;
+    padding-top: 4rem;
   }
 
   a {
@@ -70,5 +82,54 @@ const { title } = Astro.props;
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  body > nav.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+  }
+
+  body > nav.main-nav .nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  body > nav.main-nav .nav-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  body > nav.main-nav .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  body > nav.main-nav .nav-links a {
+    color: #444;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  body > nav.main-nav .nav-links a:hover {
+    color: #2563eb;
+  }
+
+  @media (max-width: 768px) {
+    body > nav.main-nav .nav-links {
+      gap: 1rem;
+    }
   }
 </style>

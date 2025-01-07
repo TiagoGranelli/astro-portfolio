@@ -1,5 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { posts } from "../data/posts";
+
+// Declare remote images
+const skillIcons = {
+  js: "https://skillicons.dev/icons?i=js",
+  ts: "https://skillicons.dev/icons?i=ts",
+  react: "https://skillicons.dev/icons?i=react",
+  // ... add other skill icons
+} as const;
 ---
 
 <Layout title="Tiago Granelli | Frontend Developer">
@@ -32,57 +42,129 @@ import Layout from "../layouts/Layout.astro";
         <h3>Frontend</h3>
         <div class="skill-tags">
           <span>
-            <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
+            <Image
+              src={skillIcons.js}
+              alt="JavaScript"
+              width={20}
+              height={20}
+              format="webp"
+              loading="eager"
+            />
             JavaScript
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" />
+            <Image
+              src={skillIcons.ts}
+              alt="TypeScript"
+              width={20}
+              height={20}
+              format="webp"
+              loading="eager"
+            />
             TypeScript
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=react" alt="React" />
+            <Image
+              src={skillIcons.react}
+              alt="React"
+              width={20}
+              height={20}
+              format="webp"
+              loading="eager"
+            />
             React
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=angular" alt="Angular" />
+            <Image
+              src="https://skillicons.dev/icons?i=angular"
+              alt="Angular"
+              width={20}
+              height={20}
+              format="webp"
+              loading="eager"
+            />
             Angular
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" />
+            <Image
+              src="https://skillicons.dev/icons?i=nextjs"
+              alt="Next.js"
+              width={20}
+              height={20}
+              format="webp"
+              loading="eager"
+            />
             Next.js
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=html" alt="HTML5" />
+            <Image
+              src="https://skillicons.dev/icons?i=html"
+              alt="HTML5"
+              width={20}
+              height={20}
+              format="webp"
+              loading="eager"
+            />
             HTML5
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=css" alt="CSS3" />
+            <Image
+              src="https://skillicons.dev/icons?i=css"
+              alt="CSS3"
+              width={20}
+              height={20}
+              format="webp"
+            />
             CSS3
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=sass" alt="Sass" />
+            <Image
+              src="https://skillicons.dev/icons?i=sass"
+              alt="Sass"
+              width={20}
+              height={20}
+              format="webp"
+            />
             SCSS/Sass
           </span>
           <span>
-            <img
+            <Image
               src="https://skillicons.dev/icons?i=bootstrap"
               alt="Bootstrap"
+              width={20}
+              height={20}
+              format="webp"
             />
             Bootstrap
           </span>
           <span>
-            <img
+            <Image
               src="https://skillicons.dev/icons?i=tailwind"
               alt="Tailwind CSS"
+              width={20}
+              height={20}
+              format="webp"
             />
             Tailwind CSS
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=astro" alt="Astro" />
+            <Image
+              src="https://skillicons.dev/icons?i=astro"
+              alt="Astro"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Astro
           </span>
           <span>
-            <img src="https://cdn.simpleicons.org/ionic/3880FF" alt="Ionic" />
+            <Image
+              src="https://cdn.simpleicons.org/ionic/3880FF"
+              alt="Ionic"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Ionic
           </span>
         </div>
@@ -92,38 +174,83 @@ import Layout from "../layouts/Layout.astro";
         <h3>Mobile & Backend</h3>
         <div class="skill-tags">
           <span>
-            <img
+            <Image
               src="https://skillicons.dev/icons?i=react"
               alt="React Native"
+              width={20}
+              height={20}
+              format="webp"
             />
             React Native
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" />
+            <Image
+              src="https://skillicons.dev/icons?i=firebase"
+              alt="Firebase"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Firebase
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=supabase" alt="Supabase" />
+            <Image
+              src="https://skillicons.dev/icons?i=supabase"
+              alt="Supabase"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Supabase
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
+            <Image
+              src="https://skillicons.dev/icons?i=nodejs"
+              alt="Node.js"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Node.js
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=express" alt="Express" />
+            <Image
+              src="https://skillicons.dev/icons?i=express"
+              alt="Express"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Express
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" />
+            <Image
+              src="https://skillicons.dev/icons?i=nestjs"
+              alt="NestJS"
+              width={20}
+              height={20}
+              format="webp"
+            />
             NestJS
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=php" alt="PHP" />
+            <Image
+              src="https://skillicons.dev/icons?i=php"
+              alt="PHP"
+              width={20}
+              height={20}
+              format="webp"
+            />
             PHP
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=graphql" alt="GraphQL" />
+            <Image
+              src="https://skillicons.dev/icons?i=graphql"
+              alt="GraphQL"
+              width={20}
+              height={20}
+              format="webp"
+            />
             GraphQL
           </span>
         </div>
@@ -133,70 +260,142 @@ import Layout from "../layouts/Layout.astro";
         <h3>Tools & Platforms</h3>
         <div class="skill-tags">
           <span>
-            <img src="https://skillicons.dev/icons?i=git" alt="Git" />
+            <Image
+              src="https://skillicons.dev/icons?i=git"
+              alt="Git"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Git
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+            <Image
+              src="https://skillicons.dev/icons?i=github"
+              alt="GitHub"
+              width={20}
+              height={20}
+              format="webp"
+            />
             GitHub
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=npm" alt="npm" />
+            <Image
+              src="https://skillicons.dev/icons?i=npm"
+              alt="npm"
+              width={20}
+              height={20}
+              format="webp"
+            />
             npm
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=yarn" alt="Yarn" />
+            <Image
+              src="https://skillicons.dev/icons?i=yarn"
+              alt="Yarn"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Yarn
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=pnpm" alt="pnpm" />
+            <Image
+              src="https://skillicons.dev/icons?i=pnpm"
+              alt="pnpm"
+              width={20}
+              height={20}
+              format="webp"
+            />
             pnpm
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=bun" alt="Bun" />
+            <Image
+              src="https://skillicons.dev/icons?i=bun"
+              alt="Bun"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Bun
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=webpack" alt="Webpack" />
+            <Image
+              src="https://skillicons.dev/icons?i=webpack"
+              alt="Webpack"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Webpack
           </span>
           <span>
-            <img src="https://cdn.simpleicons.org/grunt/FBA919" alt="Grunt" />
+            <Image
+              src="https://cdn.simpleicons.org/grunt/FBA919"
+              alt="Grunt"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Grunt
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=jest" alt="Jest" />
+            <Image
+              src="https://skillicons.dev/icons?i=jest"
+              alt="Jest"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Jest
           </span>
           <span>
-            <img
+            <Image
               src="https://cdn.simpleicons.org/storybook/FF4785"
               alt="Storybook"
+              width={20}
+              height={20}
+              format="webp"
             />
             Storybook
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=figma" alt="Figma" />
+            <Image
+              src="https://skillicons.dev/icons?i=figma"
+              alt="Figma"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Figma
           </span>
           <span>
-            <img
+            <Image
               src="https://skillicons.dev/icons?i=wordpress"
               alt="WordPress"
+              width={20}
+              height={20}
+              format="webp"
             />
             WordPress
           </span>
           <span>
-            <img
+            <Image
               src="https://avatars.githubusercontent.com/u/1288938?s=200&v=4"
               alt="VTEX"
+              width={20}
+              height={20}
+              format="webp"
             />
             VTEX
           </span>
           <span>
-            <img
+            <Image
               src="https://skillicons.dev/icons?i=cloudflare"
               alt="Cloudflare"
+              width={20}
+              height={20}
+              format="webp"
             />
             Cloudflare
           </span>
@@ -207,35 +406,62 @@ import Layout from "../layouts/Layout.astro";
         <h3>Methodologies & Management</h3>
         <div class="skill-tags">
           <span>
-            <img src="https://cdn.simpleicons.org/jira/0052CC" alt="Jira" />
+            <Image
+              src="https://cdn.simpleicons.org/jira/0052CC"
+              alt="Jira"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Jira
           </span>
           <span>
-            <img
+            <Image
               src="https://cdn.simpleicons.org/scrumalliance/009FDA"
               alt="Scrum"
+              width={20}
+              height={20}
+              format="webp"
             />
             Scrum
           </span>
           <span>
-            <img src="https://cdn.simpleicons.org/trello/0052CC" alt="Kanban" />
+            <Image
+              src="https://cdn.simpleicons.org/trello/0052CC"
+              alt="Kanban"
+              width={20}
+              height={20}
+              format="webp"
+            />
             Kanban
           </span>
           <span>
-            <img src="https://skillicons.dev/icons?i=gitlab" alt="GitLab" />
+            <Image
+              src="https://skillicons.dev/icons?i=gitlab"
+              alt="GitLab"
+              width={20}
+              height={20}
+              format="webp"
+            />
             GitLab
           </span>
           <span>
-            <img
+            <Image
               src="https://skillicons.dev/icons?i=bitbucket"
               alt="Bitbucket"
+              width={20}
+              height={20}
+              format="webp"
             />
             Bitbucket
           </span>
           <span>
-            <img
+            <Image
               src="https://cdn.simpleicons.org/confluence/0052CC"
               alt="Confluence"
+              width={20}
+              height={20}
+              format="webp"
             />
             Confluence
           </span>
@@ -260,8 +486,16 @@ import Layout from "../layouts/Layout.astro";
             <small>Jest</small>
           </div>
           <div class="project-links">
-            <a href="#" target="_blank">Demo</a>
-            <a href="#" target="_blank">GitHub</a>
+            <a
+              href="https://ecommerce-components.demo.tiagogranelli.me"
+              target="_blank"
+              rel="noopener noreferrer">Demo</a
+            >
+            <a
+              href="https://github.com/tiagogranelli/ecommerce-components"
+              target="_blank"
+              rel="noopener noreferrer">GitHub</a
+            >
           </div>
         </article>
 
@@ -279,8 +513,16 @@ import Layout from "../layouts/Layout.astro";
             <small>CLI</small>
           </div>
           <div class="project-links">
-            <a href="#" target="_blank">Demo</a>
-            <a href="#" target="_blank">GitHub</a>
+            <a
+              href="https://faststore-tools.demo.tiagogranelli.me"
+              target="_blank"
+              rel="noopener noreferrer">Demo</a
+            >
+            <a
+              href="https://github.com/tiagogranelli/faststore-tools"
+              target="_blank"
+              rel="noopener noreferrer">GitHub</a
+            >
           </div>
         </article>
 
@@ -298,10 +540,45 @@ import Layout from "../layouts/Layout.astro";
             <small>TypeScript</small>
           </div>
           <div class="project-links">
-            <a href="#" target="_blank">Case Study</a>
-            <a href="#" target="_blank">GitHub</a>
+            <a
+              href="https://retail-app.case-study.tiagogranelli.me"
+              target="_blank"
+              rel="noopener noreferrer">Case Study</a
+            >
+            <a
+              href="https://github.com/tiagogranelli/retail-mobile-app"
+              target="_blank"
+              rel="noopener noreferrer">GitHub</a
+            >
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="featured-posts">
+      <h2>✍️ Latest Articles</h2>
+      <div class="post-grid">
+        {
+          posts.slice(0, 2).map((post) => (
+            <article class="post-card">
+              <h3>
+                <a href={`/blog/${post.slug}`}>{post.title}</a>
+              </h3>
+              <p class="post-excerpt">{post.excerpt}</p>
+              <div class="post-meta">
+                <span class="post-date">
+                  {new Date(post.date).toLocaleDateString()}
+                </span>
+                <div class="post-tags">
+                  {post.tags.slice(0, 2).map((tag) => (
+                    <span class="tag">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </article>
+          ))
+        }
+        <a href="/blog" class="view-all-posts"> View all posts → </a>
       </div>
     </section>
 
@@ -391,7 +668,8 @@ import Layout from "../layouts/Layout.astro";
 
   .hero {
     text-align: center;
-    margin: 6rem 0;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
   }
 
   h1 {
@@ -789,6 +1067,78 @@ import Layout from "../layouts/Layout.astro";
     100% {
       transform: translateX(100%);
     }
+  }
+
+  .featured-posts {
+    margin: 4rem 0;
+  }
+
+  .post-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .post-card {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+  }
+
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-card h3 a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .post-card h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .post-excerpt {
+    color: #444;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  .post-date {
+    color: #666;
+  }
+
+  .post-tags {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .view-all-posts {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+  }
+
+  .view-all-posts:hover {
+    transform: translateX(5px);
   }
 </style>
 

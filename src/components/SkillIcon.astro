@@ -1,0 +1,19 @@
+---
+interface Props {
+  name: string;
+  url: string;
+  loading?: "eager" | "lazy";
+}
+
+const { name, url, loading = "lazy" } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<Image
+  src={url}
+  alt={name}
+  width={20}
+  height={20}
+  format="webp"
+  loading={loading}
+/>
