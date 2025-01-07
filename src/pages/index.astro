@@ -1,51 +1,802 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<h2>My name is Tiago</h2>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<Layout title="Tiago Granelli | Frontend Developer">
+  <main class="container">
+    <section class="hero">
+      <h1>👋 Hi, I'm Tiago Granelli</h1>
+      <p class="subtitle">Software Engineer & Frontend Developer</p>
+      <div class="contact-brief">
+        <a href="https://linkedin.com/in/yourprofile">💼 LinkedIn</a> |
+        <a href="tel:+352661413588">📱 +352 661 413 588</a> |
+        <a href="mailto:tiago.granelli@gmail.com">📧 tiago.granelli@gmail.com</a
+        > |
+        <a href="https://github.com/yourgithub">🐱 GitHub</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>💫 About Me</h2>
+      <p>
+        Experienced Software Engineer with a strong focus on frontend
+        development and e-commerce solutions. Proven track record in improving
+        development processes and implementing efficient technologies. Currently
+        pursuing a degree in Software Analysis and Development.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>🛠️ Technical Skills</h2>
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skill-tags">
+          <span>
+            <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
+            JavaScript
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" />
+            TypeScript
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=react" alt="React" />
+            React
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=angular" alt="Angular" />
+            Angular
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" />
+            Next.js
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=html" alt="HTML5" />
+            HTML5
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=css" alt="CSS3" />
+            CSS3
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=sass" alt="Sass" />
+            SCSS/Sass
+          </span>
+          <span>
+            <img
+              src="https://skillicons.dev/icons?i=bootstrap"
+              alt="Bootstrap"
+            />
+            Bootstrap
+          </span>
+          <span>
+            <img
+              src="https://skillicons.dev/icons?i=tailwind"
+              alt="Tailwind CSS"
+            />
+            Tailwind CSS
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=astro" alt="Astro" />
+            Astro
+          </span>
+          <span>
+            <img src="https://cdn.simpleicons.org/ionic/3880FF" alt="Ionic" />
+            Ionic
+          </span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Mobile & Backend</h3>
+        <div class="skill-tags">
+          <span>
+            <img
+              src="https://skillicons.dev/icons?i=react"
+              alt="React Native"
+            />
+            React Native
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" />
+            Firebase
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=supabase" alt="Supabase" />
+            Supabase
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
+            Node.js
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=express" alt="Express" />
+            Express
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" />
+            NestJS
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=php" alt="PHP" />
+            PHP
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=graphql" alt="GraphQL" />
+            GraphQL
+          </span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Tools & Platforms</h3>
+        <div class="skill-tags">
+          <span>
+            <img src="https://skillicons.dev/icons?i=git" alt="Git" />
+            Git
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+            GitHub
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=npm" alt="npm" />
+            npm
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=yarn" alt="Yarn" />
+            Yarn
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=pnpm" alt="pnpm" />
+            pnpm
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=bun" alt="Bun" />
+            Bun
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=webpack" alt="Webpack" />
+            Webpack
+          </span>
+          <span>
+            <img src="https://cdn.simpleicons.org/grunt/FBA919" alt="Grunt" />
+            Grunt
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=jest" alt="Jest" />
+            Jest
+          </span>
+          <span>
+            <img
+              src="https://cdn.simpleicons.org/storybook/FF4785"
+              alt="Storybook"
+            />
+            Storybook
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=figma" alt="Figma" />
+            Figma
+          </span>
+          <span>
+            <img
+              src="https://skillicons.dev/icons?i=wordpress"
+              alt="WordPress"
+            />
+            WordPress
+          </span>
+          <span>
+            <img
+              src="https://avatars.githubusercontent.com/u/1288938?s=200&v=4"
+              alt="VTEX"
+            />
+            VTEX
+          </span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Methodologies & Management</h3>
+        <div class="skill-tags">
+          <span>
+            <img src="https://cdn.simpleicons.org/jira/0052CC" alt="Jira" />
+            Jira
+          </span>
+          <span>
+            <img
+              src="https://cdn.simpleicons.org/scrumalliance/009FDA"
+              alt="Scrum"
+            />
+            Scrum
+          </span>
+          <span>
+            <img src="https://cdn.simpleicons.org/trello/0052CC" alt="Kanban" />
+            Kanban
+          </span>
+          <span>
+            <img src="https://skillicons.dev/icons?i=gitlab" alt="GitLab" />
+            GitLab
+          </span>
+          <span>
+            <img
+              src="https://skillicons.dev/icons?i=bitbucket"
+              alt="Bitbucket"
+            />
+            Bitbucket
+          </span>
+          <span>
+            <img
+              src="https://cdn.simpleicons.org/confluence/0052CC"
+              alt="Confluence"
+            />
+            Confluence
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>🚀 Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>🛍️ E-commerce Component Library</h3>
+          <p>
+            A comprehensive React component library specifically designed for
+            e-commerce applications. Features high-performance product cards,
+            carousels, and checkout flows.
+          </p>
+          <div class="project-tags">
+            <small>React</small>
+            <small>TypeScript</small>
+            <small>Storybook</small>
+            <small>Jest</small>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank">Demo</a>
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>⚡ FastStore Performance Tools</h3>
+          <p>
+            CLI tool suite for analyzing and optimizing VTEX FastStore
+            applications. Includes bundle analysis, performance monitoring, and
+            automated optimization suggestions.
+          </p>
+          <div class="project-tags">
+            <small>Node.js</small>
+            <small>TypeScript</small>
+            <small>VTEX</small>
+            <small>CLI</small>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank">Demo</a>
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>📱 Retail Mobile App</h3>
+          <p>
+            Cross-platform mobile application for retail inventory management.
+            Features real-time updates, barcode scanning, and offline
+            capabilities.
+          </p>
+          <div class="project-tags">
+            <small>React Native</small>
+            <small>Firebase</small>
+            <small>GraphQL</small>
+            <small>TypeScript</small>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank">Case Study</a>
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience">
+      <h2>💼 Professional Experience</h2>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <div class="experience-header">
+            <h3>Hospital Albert Einstein</h3>
+            <span>09/2023 - Present</span>
+          </div>
+          <p class="role">Software Engineer</p>
+          <ul>
+            <li>
+              Improved compilation time by 910% through build script
+              optimization
+            </li>
+            <li>Implemented ESLint and Prettier for better code quality</li>
+            <li>Developed e-commerce platform using VTEX and Angular</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-header">
+            <h3>Carrefour</h3>
+            <span>04/2023 - 09/2023</span>
+          </div>
+          <p class="role">Software Engineer</p>
+          <ul>
+            <li>Led VTEX IO to VTEX Faststore migration</li>
+            <li>Developed solutions using Next.js, React, and GraphQL</li>
+            <li>Optimized performance for key e-commerce pages</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-header">
+            <h3>Tok&Stok</h3>
+            <span>09/2021 - 04/2023</span>
+          </div>
+          <p class="role">Software Engineer</p>
+          <ul>
+            <li>Built frontend applications with TypeScript and React</li>
+            <li>Developed new e-commerce platform using Next.js</li>
+            <li>Created technical documentation and architecture diagrams</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="education">
+      <h2>📚 Education</h2>
+      <div class="education-item">
+        <h3>Software Analysis and Development</h3>
+        <p>Universidade Estácio de Sá | 2022 - Current</p>
+      </div>
+      <div class="education-item">
+        <h3>Notable Courses</h3>
+        <ul>
+          <li>Harvard CS50x: Introduction to Computer Science</li>
+          <li>Full Stack Web Development Bootcamp (RocketSeat)</li>
+          <li>freeCodeCamp: Responsive Web Design & JavaScript Algorithms</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="languages">
+      <h2>🌎 Languages</h2>
+      <div class="skill-tags">
+        <span>Portuguese (Native)</span>
+        <span>English (Advanced)</span>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  section {
+    margin: 4rem 0;
+  }
+
+  .hero {
+    text-align: center;
+    margin: 6rem 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    color: #666;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .skill-tags span {
+    background: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .skill-tags span:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #e8e8e8;
+  }
+
+  .skill-tags img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .skill-tags span:hover img {
+    transform: rotate(360deg);
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    border: 1px solid #eee;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-tags {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .project-tags small {
+    background: #e0e0e0;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+  }
+
+  .contact-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .contact-links a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+  }
+
+  .contact-links a:hover {
+    color: #666;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      margin: 3rem 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  }
+
+  .contact-brief {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .contact-brief a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .contact-brief a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+
+  .contact-brief a:hover::after {
+    width: 100%;
+  }
+
+  .skill-category {
+    margin-bottom: 2rem;
+  }
+
+  .skill-category h3 {
+    margin-bottom: 1rem;
+    color: #444;
+  }
+
+  .experience-grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .experience-card {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .experience-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-header span {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .role {
+    color: #2563eb;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .role::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transform: translateX(-100%);
+    animation: shimmerEffect 2s infinite;
+  }
+
+  @keyframes shimmerEffect {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .experience-card ul {
+    list-style-position: inside;
+    color: #444;
+  }
+
+  .education-item {
+    margin-bottom: 2rem;
+  }
+
+  .education-item h3 {
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+  }
+
+  .education-item ul {
+    list-style-position: inside;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .contact-brief {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+  }
+
+  .project-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .project-links a {
+    color: #2563eb;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .project-links a:hover {
+    text-decoration: underline;
+  }
+
+  .project-card {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    border: 1px solid #eee;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  /* Skill tags hover animation */
+  .skill-tags span {
+    transition: all 0.3s ease;
+  }
+
+  .skill-tags span:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #e8e8e8;
+  }
+
+  /* Skill icons spin on hover */
+  .skill-tags img {
+    transition: transform 0.3s ease;
+  }
+
+  .skill-tags span:hover img {
+    transform: rotate(360deg);
+  }
+
+  /* Project cards hover animation - update existing styles */
+  .project-card {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Experience cards hover effect */
+  .experience-card {
+    transition: all 0.3s ease;
+  }
+
+  .experience-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Contact links hover animation */
+  .contact-brief a {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .contact-brief a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+
+  .contact-brief a:hover::after {
+    width: 100%;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Loading animation for images */
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* Remove the generic img positioning */
+  img {
+    display: inline-block;
+  }
+
+  /* Pulse animation for role tags */
+  .role {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .role::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transform: translateX(-100%);
+    animation: shimmerEffect 2s infinite;
+  }
+
+  @keyframes shimmerEffect {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll("img");
+
+    images.forEach((img) => {
+      if (!img.complete) {
+        img.classList.add("loading");
+      }
+
+      img.onload = () => {
+        img.classList.remove("loading");
+      };
+    });
+  });
+</script>
